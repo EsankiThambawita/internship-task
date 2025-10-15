@@ -2,4 +2,11 @@
 
 import dynamic from "next/dynamic";
 
-export const components = {};
+export const components = {
+  blog_slice: dynamic(() => import("./BlogSlice")),
+  footer: dynamic(() => import("./Footer")),
+  header: dynamic(() => import("./Header")),
+  hero_slice: dynamic(() => import("./HeroSlice")),
+  services_grid: dynamic(() => import("./ServicesGrid")),
+  text_with_image: dynamic(() => import("./TextWithImage")),
+};
